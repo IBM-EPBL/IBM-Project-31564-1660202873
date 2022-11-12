@@ -47,3 +47,11 @@ body{
     margin-top:7px;
     margin-bottom:10px;
 }
+
+.heading{
+    text-align: center;
+    color:cyan;
+    border:white solid;
+    margin-top:100px;
+    margin-bottom:25px;
+}
