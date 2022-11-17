@@ -81,5 +81,5 @@ def update_final_graph(selected_col):
     df['Admission_Deposit']=df['Admission_Deposit'].round(decimals=2)
    
     bubble=px.scatter(df,x=df.index,y='Stay',color='Admission_Deposit',size=count_['patientid'],labels={'size':'No of patients','Stay':'Mean Stay','Admission_Deposit':'Mean Admission Deposit'})
-    bubble.update_layout(yaxis_range=[0,11],template='plotly_dark')
+    bubble.update_layout(yaxis_range=[0,11])
     return bubble
