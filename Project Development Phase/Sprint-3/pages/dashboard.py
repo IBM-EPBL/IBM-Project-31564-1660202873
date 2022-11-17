@@ -107,7 +107,7 @@ layout=html.Div(
                                 dcc.Graph(id='dept_graph'),className='border border-warning'
                             ),
                             dbc.Row(
-                                dcc.Graph(id='Admission_graph'),className='border border-danger top-space'
+                                dcc.Graph(id='Admission_graph'),className='border border-danger top-space-1'
                             )
                             ],sm=5                          
                         )
