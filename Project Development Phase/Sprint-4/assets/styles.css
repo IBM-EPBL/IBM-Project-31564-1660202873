@@ -82,6 +82,15 @@ body{
     margin-bottom: 10px;
 }
 
+.boxed1{
+    
+    border-radius: 16px;
+    border:white solid;
+    padding:20px;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+
 h5{
     color:white;
 }
