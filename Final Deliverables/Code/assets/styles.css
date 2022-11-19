@@ -1,0 +1,101 @@
+h1{
+    text-align: center;
+    color:#61C5F3;
+    margin-bottom: 50px;
+}
+
+#label{
+    color:white;
+    text-align:right;
+    margin-top:5px
+    
+}
+label{
+    color:white;
+    font-size:16px;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.card-title
+{
+    color:white;
+    text-align:center;
+}
+
+.card-text {
+    color:aqua;
+    text-align:center;
+}
+
+.sm-cards{
+    border: #61C5F3 1px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#header-row{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.navstyle:hover{
+    font-weight:bold;
+    
+}
+
+.top-space{
+    margin-top:7px;
+    margin-bottom:40px;
+}
+.top-space-1{
+    margin-top:11px;
+    margin-bottom:10px;
+}
+.heading{
+    text-align: center;
+    color:cyan;
+    border:white solid;
+    margin-top:10px;
+    margin-bottom:25px;
+}
+
+.boxed{
+    width:70%;
+    height:500px;
+    border-radius: 16px;
+    border:#61C5F3 solid;
+    padding:20px;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+
+.boxed1{
+    width:70%;
+    border-radius: 16px;
+    border:white solid;
+    padding:20px;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+
+.boxed1{
+    
+    border-radius: 16px;
+    border:white solid;
+    padding:20px;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+
+h5{
+    color:white;
+}
+
+h3{
+    text-align:center;
+    color:gold;
+}
