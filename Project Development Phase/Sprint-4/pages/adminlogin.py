@@ -21,7 +21,7 @@ layout=[html.Div(
             html.Br(),
             dbc.Button("Login", color="info",n_clicks=0,id='admin_login'),
             html.Br(),
-            html.P(id="loginout")
+            html.P(id="loginout",style={'color':'white'})
             # html.Link(dbc.Button("Login", color="info",n_clicks=0,id='admin_login'),href='/admin',hidden=True)])
         ],className='boxed2')
     ]
@@ -39,7 +39,7 @@ layout=[html.Div(
 def update(n_clicks,email,password):
     if email=="admin@gmail.com" and password=="admin":
         return dcc.Link("Login!!",href="/admin")
-    return ""
+    return "Enter the correct email and password"
     
        
         
