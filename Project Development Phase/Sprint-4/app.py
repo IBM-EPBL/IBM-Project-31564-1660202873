@@ -23,7 +23,8 @@ navbar = dbc.NavbarSimple(
     children=[
         dbc.NavItem(dbc.NavLink("Dashboard", href="/"),className="navstyle"),
         dbc.NavItem(dbc.NavLink("Insights", href="/insights"),className="navstyle"),
-        dbc.NavItem(dbc.NavLink("Classification",href="/classification"),className="navstyle")
+        dbc.NavItem(dbc.NavLink("Classification",href="/classification"),className="navstyle"),
+        dbc.NavItem(dbc.NavLink("Admin",href="/adminlogin"),className="navstyle")
            
     ],
     brand="Health Care Data Analysis",

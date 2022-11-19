@@ -4,7 +4,11 @@ import dash_bootstrap_components as dbc
 # from app import model
 import numpy as np
 import pickle
+from firebase import firebase
 dash.register_page(__name__,path='/classification')
+firebase_app=firebase.FirebaseApplication('https://hospital-data-analysis-default-rtdb.asia-southeast1.firebasedatabase.app/')
+
+
 with open('rfc_model.pickle', 'rb') as f:
         model = pickle.load(f)
 
@@ -140,7 +144,11 @@ def update_output(n_clicks,hospital_code,hospitaltypecode,Department,wardType,be
 def update2(n_clicks,feed1="",feed2=""):
     ret_val=""
     if feed1!="" and feed2!=None:
+
         ret_val =html.P("Feedback Submitted",style={'color':'green'})
+        data={'feed1':feed1, 'feed2':feed2}
+        result=firebase_app.post('https://hospital-data-analysis-default-rtdb.asia-southeast1.firebasedatabase.app/users',data)
+        print(result)
     return ret_val
 
 
