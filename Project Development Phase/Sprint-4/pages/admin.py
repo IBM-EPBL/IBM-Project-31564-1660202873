@@ -28,12 +28,8 @@ print(result)
 # for _ in result.keys()]
 layout=[
       html.H1("Admin Dashboard"),
-      html.Div(id='intermediate-value', style={'display': 'none'}, children = [result,yesc,noc,total]),
-      dcc.Interval(
-            id='interval-component',
-            interval=100*1000,
-            n_intervals=0
-        ),
+    #   html.Div(id='intermediate-value', style={'display': 'none'}, children = [result,yesc,noc,total]),
+      
 
         html.Div([
               dbc.Row(
@@ -102,10 +98,10 @@ layout=[
     
 #     return total,yesc,noc,feeds
 
-@dash.callback(Output('intermediate-value', 'children'),
-              [Input('interval-component', 'n_intervals')])
+# @dash.callback(Output('intermediate-value', 'children'),
+#               [Input('interval-component', 'n_intervals')])
 
-def update_global_var():
-    return connect_firebase()
+# def update_global_var():
+#     return connect_firebase()
 
 
